@@ -89,7 +89,7 @@
   <category label="30300">
     <setting type="sep"/>
     <setting label="30303" type="labelenum" values="IMDb|themoviedb.org" id="searchservice" default="IMDb"/>
-    <setting label="30308" subsetting="true" type="select" values="bg|cs|da|de|el|en|es|fi|fr|he|hr|hu|it|ja|ko|nl|no|pl|pt|pt-br|ru|sl|sr|sv|tr|zh" id="tmdbsearchlanguage" default="en" visible="eq(-1,1)"/>
+    <setting label="30308" subsetting="true" type="select" values="bg|cs|da|de|el|en-US|es|fi|fr|he|hr|hu|it|ja|ko|nl|no|pl|pt|pt-br|ru|sl|sr|sv|tr|zh" id="tmdbsearchlanguage" default="en-US" visible="eq(-1,1)"/>
     <setting label="30304" subsetting="true" type="select" values="bg-bg|cs-cz|el-gr|es-ar|da-dk|de-at|de-de|fi-fi|fr-fr|hr-hr|he-il|hu-hu|it-it|ja-jp|nb-no|nl-nl|pl-pl|pt-pt|ro-ro|ru-ru|se-se|sl-si|sr-rs|th-th|tr-tr|None" id="imdbsearchlanguage" default="None" visible="eq(-2,0)"/>
     <setting label="30305" subsetting="true" type="bool" id="fullimdbsearch" default="false" visible="eq(-3,0)"/>
     <setting type="sep"/>
