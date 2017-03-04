@@ -166,13 +166,7 @@
 			<RegExp input="$INFO[titlesource]" output="&lt;chain function=&quot;GetIMDBAKATitlesById&quot;&gt;$$2&lt;/chain&gt;" dest="5+">
 				<expression>IMDb</expression>
 			</RegExp>
-			<RegExp input="$INFO[titlesource]" output="$$18" dest="5+">
-				<RegExp input="$$1" output="&lt;chain function=&quot;GetTMDBLangTitleByIdChain&quot;&gt;$$2&lt;/chain&gt;" dest="18">
-					<expression/>
-				</RegExp>
-				<RegExp input="$INFO[tmdbtitlelanguage]" output="&lt;title&gt;$$19&lt;/title&gt;" dest="18">
-					<expression>Keep Original</expression>
-				</RegExp>
+			<RegExp input="$INFO[titlesource]" output="&lt;chain function=&quot;GetTMDBLangTitleByIdChain&quot;&gt;$$2&lt;/chain&gt;" dest="5+">
 				<expression>themoviedb.org</expression>
 			</RegExp>
 			<RegExp input="$INFO[certificationssource]" output="&lt;chain function=&quot;GetTMDBCertificationsByIdChain&quot;&gt;$$2&lt;/chain&gt;" dest="5+">
