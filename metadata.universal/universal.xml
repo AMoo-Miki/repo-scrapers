@@ -1,30 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <scraper framework="1.1" date="2014-07-24">
 	<NfoUrl dest="3">
-		<RegExp input="$INFO[searchservice]" output="$$15" dest="3">
-			<RegExp input="$INFO[tmdbsearchlanguage]" output="$$16" dest="15">
-				<RegExp input="$$1" output="&lt;details&gt;&lt;url cache=&quot;tmdb-$INFO[tmdbsearchlanguage]-\2.json&quot;&gt;http://api.tmdb.org/3/movie/\2?api_key=f7f51775877e0bb6703520952b3c7840&amp;amp;language=$INFO[tmdbsearchlanguage]&lt;/url&gt;&lt;id&gt;\2&lt;/id&gt;&lt;/details&gt;" dest="16">
-					<expression clear="yes" noclean="1">(themoviedb.org/movie/)([0-9]*)</expression>
-				</RegExp>
-				<RegExp input="$$1" output="&lt;details&gt;&lt;url cache=&quot;tmdb-$INFO[tmdbsearchlanguage]-tt\1.json&quot;&gt;http://api.tmdb.org/3/movie/tt\1?api_key=f7f51775877e0bb6703520952b3c7840&amp;amp;language=$INFO[tmdbsearchlanguage]&lt;/url&gt;&lt;id&gt;tt\1&lt;/id&gt;&lt;/details&gt;" dest="16">
-					<expression>imdb....?/title/tt([0-9]+)</expression>
-				</RegExp>
-				<RegExp input="$$1" output="&lt;details&gt;&lt;url cache=&quot;tmdb-$INFO[tmdbsearchlanguage]-tt\1.json&quot;&gt;http://api.tmdb.org/3/movie/tt\1?api_key=f7f51775877e0bb6703520952b3c7840&amp;amp;language=$INFO[tmdbsearchlanguage]&lt;/url&gt;&lt;id&gt;tt\1&lt;/id&gt;&lt;/details&gt;" dest="16">
-					<expression>imdb....?/Title\?t{0,2}([0-9]+)</expression>
-				</RegExp>
-				<expression/>
+		<RegExp input="$INFO[searchservice]" output="$$16" dest="3">
+			<RegExp input="$$1" output="&lt;details&gt;&lt;url cache=&quot;tmdb-$INFO[tmdbsearchlanguage]-\2.json&quot;&gt;http://api.tmdb.org/3/movie/\2?api_key=f7f51775877e0bb6703520952b3c7840&amp;amp;language=$INFO[tmdbsearchlanguage]&lt;/url&gt;&lt;id&gt;\2&lt;/id&gt;&lt;/details&gt;" dest="16">
+				<expression clear="yes" noclean="1">(themoviedb.org/movie/)([0-9]*)</expression>
 			</RegExp>
-			<RegExp input="$INFO[tmdbsearchlanguage]" output="$$16" dest="15">
-				<RegExp input="$$1" output="&lt;details&gt;&lt;url cache=&quot;tmdb-$INFO[tmdbsearchlanguage]-\2.json&quot;&gt;http://api.tmdb.org/3/movie/\2?api_key=f7f51775877e0bb6703520952b3c7840&lt;/url&gt;&lt;id&gt;\2&lt;/id&gt;&lt;/details&gt;" dest="16">
-					<expression clear="yes" noclean="1">(themoviedb.org/movie/)([0-9]*)</expression>
-				</RegExp>
-				<RegExp input="$$1" output="&lt;details&gt;&lt;url cache=&quot;tmdb-$INFO[tmdbsearchlanguage]-tt\1.json&quot;&gt;http://api.tmdb.org/3/movie/tt\1?api_key=f7f51775877e0bb6703520952b3c7840&lt;/url&gt;&lt;id&gt;tt\1&lt;/id&gt;&lt;/details&gt;" dest="16">
-					<expression>imdb....?/title/tt([0-9]+)</expression>
-				</RegExp>
-				<RegExp input="$$1" output="&lt;details&gt;&lt;url cache=&quot;tmdb-$INFO[tmdbsearchlanguage]-tt\1.json&quot;&gt;http://api.tmdb.org/3/movie/tt\1?api_key=f7f51775877e0bb6703520952b3c7840&lt;/url&gt;&lt;id&gt;tt\1&lt;/id&gt;&lt;/details&gt;" dest="16">
-					<expression>imdb....?/Title\?t{0,2}([0-9]+)</expression>
-				</RegExp>
-				<expression>Keep Original</expression>
+			<RegExp input="$$1" output="&lt;details&gt;&lt;url cache=&quot;tmdb-$INFO[tmdbsearchlanguage]-tt\1.json&quot;&gt;http://api.tmdb.org/3/movie/tt\1?api_key=f7f51775877e0bb6703520952b3c7840&amp;amp;language=$INFO[tmdbsearchlanguage]&lt;/url&gt;&lt;id&gt;tt\1&lt;/id&gt;&lt;/details&gt;" dest="16">
+				<expression>imdb....?/title/tt([0-9]+)</expression>
+			</RegExp>
+			<RegExp input="$$1" output="&lt;details&gt;&lt;url cache=&quot;tmdb-$INFO[tmdbsearchlanguage]-tt\1.json&quot;&gt;http://api.tmdb.org/3/movie/tt\1?api_key=f7f51775877e0bb6703520952b3c7840&amp;amp;language=$INFO[tmdbsearchlanguage]&lt;/url&gt;&lt;id&gt;tt\1&lt;/id&gt;&lt;/details&gt;" dest="16">
+				<expression>imdb....?/Title\?t{0,2}([0-9]+)</expression>
 			</RegExp>
 			<expression>themoviedb.org</expression>
 		</RegExp>
@@ -66,7 +51,7 @@
 		<RegExp input="$INFO[searchservice]" output="$$17" dest="8">
 			<RegExp input="$$5" output="&lt;results&gt;\1&lt;/results&gt;" dest="17">
 				<RegExp input="$$1" output="&lt;entity&gt;&lt;title&gt;\3&lt;/title&gt;&lt;id&gt;\2&lt;/id&gt;&lt;year&gt;\1&lt;/year&gt;&lt;url cache=&quot;tmdb-$INFO[tmdbsearchlanguage]-\2.json&quot;&gt;http://api.tmdb.org/3/movie/\2?api_key=f7f51775877e0bb6703520952b3c7840&amp;amp;language=$INFO[tmdbsearchlanguage]&lt;/url&gt;&lt;/entity&gt;" dest="5">
-					<expression repeat="yes">&quot;release_date&quot;:&quot;([0-9]+)-.*?&quot;id&quot;:([0-9]*),&quot;original_title&quot;:&quot;([^&quot;]*)&quot;,&quot;original_language&quot;:&quot;[^&quot;]*&quot;,&quot;title&quot;:&quot;([^&quot;]*)&quot;</expression>
+					<expression repeat="yes">&quot;release_date&quot;:&quot;([0-9]+)-.*?&quot;id&quot;:([0-9]*),&quot;original_title&quot;:&quot;[^&quot;]*&quot;,&quot;original_language&quot;:&quot;[^&quot;]*&quot;,&quot;title&quot;:&quot;([^&quot;]*)&quot;</expression>
 				</RegExp>
 				<RegExp input="$$1" output="&lt;entity&gt;&lt;title&gt;\3&lt;/title&gt;&lt;id&gt;\2&lt;/id&gt;&lt;year&gt;\1&lt;/year&gt;&lt;url cache=&quot;tmdb-$INFO[tmdbsearchlanguage]-\2.json&quot;&gt;http://api.tmdb.org/3/movie/\2?api_key=f7f51775877e0bb6703520952b3c7840&amp;amp;language=$INFO[tmdbsearchlanguage]&lt;/url&gt;&lt;/entity&gt;" dest="5+">
 					<expression repeat="yes">&quot;release_date&quot;:&quot;([0-9]+)-.*?&quot;id&quot;:([0-9]*),&quot;original_title&quot;:&quot;([^&quot;]*)&quot;,&quot;original_language&quot;:&quot;[^&quot;]*&quot;</expression>
@@ -109,7 +94,6 @@
 			</RegExp>
 			<expression>IMDb</expression>
 		</RegExp>
-
 	</GetSearchResults>
 	<GetAKASearchResults dest="8">
 		<RegExp input="$$5" output="&lt;?xml version=&quot;1.0&quot; encoding=&quot;iso-8859-1&quot; standalone=&quot;yes&quot;?&gt;&lt;results&gt;\1&lt;/results&gt;" dest="8">
