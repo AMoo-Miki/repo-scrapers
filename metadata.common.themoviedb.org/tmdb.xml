@@ -37,7 +37,7 @@
 				</RegExp>
 				<expression>Keep Original</expression>
 			</RegExp>
-			<expression noclean="1" />
+			<expression noclean="1"/>
 		</RegExp>
 	</GetTMDBLangTitleByIdChain>
 	<ParseTMDBTitle dest="5">
