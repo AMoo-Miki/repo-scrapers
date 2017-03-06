@@ -156,6 +156,12 @@
 			<RegExp input="$$20" output="&lt;year&gt;\1&lt;/year&gt;" dest="5+">
 				<expression/>
 			</RegExp>
+			<RegExp input="$$1" output="\1" dest="20">
+				<expression noclean="1">&quot;release_date&quot;:&quot;([^&quot;]*)</expression>
+			</RegExp>
+			<RegExp input="$$20" output="&lt;premiered&gt;\1&lt;/premiered&gt;" dest="5+">
+				<expression/>
+			</RegExp>
 			<RegExp input="$INFO[titlesource]" output="&lt;chain function=&quot;GetIMDBAKATitlesById&quot;&gt;$$2&lt;/chain&gt;" dest="5+">
 				<expression>IMDb</expression>
 			</RegExp>
