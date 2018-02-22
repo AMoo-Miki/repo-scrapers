@@ -8,7 +8,7 @@
     <import addon="metadata.common.fanart.tv" version="3.1.0"/>
     <import addon="metadata.common.imdb.com" version="13.0.0"/>
     <import addon="metadata.common.ofdb.de" version="1.0.3"/>
-    <import addon="metadata.common.themoviedb.org" version="13.1.1"/>
+    <import addon="metadata.common.themoviedb.org" version="3.1.1"/>
     <import addon="metadata.common.omdbapi.com" version="1.0.0"/>
   </requires>
   <extension point="xbmc.metadata.scraper.movies"

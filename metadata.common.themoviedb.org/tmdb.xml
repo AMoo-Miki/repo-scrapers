@@ -390,26 +390,6 @@
 		</RegExp>
 	</ParseTMDBRatings>
 
-	<GetTMDBRatingsByIdAsDefChain dest="4"> <!-- Miki: Check if this is needed -->
-		<RegExp input="$$5" output="&lt;details&gt;\1&lt;/details&gt;" dest="4">
-			<RegExp input="$$1" output="&lt;url function=&quot;ParseTMDBRatingsAsDef&quot; cache=&quot;tmdb-$INFO[language]-\1.json&quot;&gt;https://api.tmdb.org/3/movie/\1?api_key=ecbc86c92da237cb9faff6d3ddc4be6d&amp;amp;language=$INFO[language]&lt;/url&gt;" dest="5">
-				<expression />
-			</RegExp>
-			<expression noclean="1" />
-		</RegExp>
-	</GetTMDBRatingsByIdAsDefChain>
-	<ParseTMDBRatingsAsDef dest="5">
-		<RegExp input="$$2" output="&lt;details&gt;&lt;ratings&gt;&lt;rating name=&quot;themoviedb&quot; default=&quot;true&quot;&gt;\1&lt;/rating&gt;&lt;/ratings&gt;&lt;/details&gt;" dest="5">
-			<RegExp input="$$1" output="&lt;value&gt;\1&lt;/value&gt;" dest="2">
-				<expression noclean="1">&quot;vote_average&quot;:([^,]*),&quot;</expression>
-			</RegExp>
-			<RegExp input="$$1" output="&lt;votes&gt;\1&lt;/votes&gt;" dest="2+">
-				<expression noclean="1">&quot;vote_count&quot;:([0-9]+)</expression>
-			</RegExp>
-			<expression noclean="1" />
-		</RegExp>
-	</ParseTMDBRatingsAsDef>
-
 	<GetTMDBStudioByIdChain dest="4"> <!-- Expected chaining format= tmdb_id::language_for_caching-->
 		<RegExp input="$$5" output="&lt;details&gt;\1&lt;/details&gt;" dest="4">
 			<RegExp input="$$1" output="&lt;url function=&quot;ParseTMDBStudio&quot; cache=&quot;tmdb-\2-\1.json&quot;&gt;https://api.tmdb.org/3/movie/\1?api_key=ecbc86c92da237cb9faff6d3ddc4be6d&amp;amp;language=\2&lt;/url&gt;" dest="5">
