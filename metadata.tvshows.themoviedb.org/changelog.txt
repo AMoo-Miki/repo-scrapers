@@ -1,3 +1,18 @@
+[B]2.0.7[/B]
+- Fixed: show overview
+
+[B]2.0.6[/B]
+- Fixed scraping after API layout changes
+
+[B]2.0.5[/B]
+- use https to access thetvdb.com
+
+[B]2.0.4[/B]
+- fixed: scraping episodes with no air date
+
+[B]2.0.2[/B]
+- fixed: typo causing season swapped with episode numbers (thanks tdf1970)
+
 [B]2.0.1[/B]
 - changed: tmdb rating name
 
