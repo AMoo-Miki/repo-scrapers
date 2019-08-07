@@ -1,15 +1,15 @@
 # Kodi Media Center language file
 # Addon Name: The TVDB
 # Addon id: metadata.tvdb.com
-# Addon Provider: Team Kodi
+# Addon Provider: XBMC Foundation
 msgid ""
 msgstr ""
-"Project-Id-Version: KODI Addons\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Project-Id-Version: XBMC Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Kodi Translation Team\n"
-"Language-Team: English (United States) (http://www.transifex.com/projects/p/kodi-addons/language/en_US/)\n"
+"Language-Team: English (US) (http://www.transifex.com/projects/p/xbmc-addons/language/en_US/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
