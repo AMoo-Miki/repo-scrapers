@@ -540,33 +540,41 @@
 			<RegExp input="$$1" output="&lt;chain function=&quot;GetFanartTvTvShowPosterByIdChain&quot;&gt;\1::$INFO[language]&lt;/chain&gt;" dest="5">
 				<expression />
 			</RegExp>
+			<!--
 			<RegExp input="$$1" output="&lt;chain function=&quot;GetFanartTvTvShowBannerByIdChain&quot;&gt;\1::$INFO[language]&lt;/chain&gt;" dest="5+">
 				<expression />
 			</RegExp>
 			<RegExp input="$$1" output="&lt;chain function=&quot;GetFanartTvTvShowLandscapeByIdChain&quot;&gt;\1::$INFO[language]&lt;/chain&gt;" dest="5+">
 				<expression />
 			</RegExp>
+			-->
 			<RegExp input="$$1" output="&lt;chain function=&quot;GetFanartTvTvShowClearlogoByIdChain&quot;&gt;\1::$INFO[language]&lt;/chain&gt;" dest="5+">
 				<expression />
 			</RegExp>
+			<!--
 			<RegExp input="$$1" output="&lt;chain function=&quot;GetFanartTvTvShowClearartByIdChain&quot;&gt;\1::$INFO[language]&lt;/chain&gt;" dest="5+">
 				<expression />
 			</RegExp>
+			-->
 			<RegExp input="$$1" output="&lt;chain function=&quot;GetFanartTvTvShowFanartByIdChain&quot;&gt;\1&lt;/chain&gt;" dest="5+">
 				<expression />
 			</RegExp>
+			<!--
 			<RegExp input="$$1" output="&lt;chain function=&quot;GetFanartTvTvShowCharacterartByIdChain&quot;&gt;\1&lt;/chain&gt;" dest="5+">
 				<expression />
 			</RegExp>
+			-->
 			<RegExp input="$$1" output="&lt;chain function=&quot;GetFanartTvTvShowSeasonposterByIdChain&quot;&gt;\1::$INFO[language]&lt;/chain&gt;" dest="5+">
 				<expression />
 			</RegExp>
+			<!--
 			<RegExp input="$$1" output="&lt;chain function=&quot;GetFanartTvTvShowSeasonbannerByIdChain&quot;&gt;\1::$INFO[language]&lt;/chain&gt;" dest="5+">
 				<expression />
 			</RegExp>
 			<RegExp input="$$1" output="&lt;chain function=&quot;GetFanartTvTvShowSeasonLandscapeByIdChain&quot;&gt;\1::$INFO[language]&lt;/chain&gt;" dest="5+">
 				<expression />
 			</RegExp>
+			-->
 			<expression noclean="1" />
 		</RegExp>
 	</GetFanartTvArt>
