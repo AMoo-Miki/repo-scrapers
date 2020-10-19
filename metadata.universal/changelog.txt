@@ -1,3 +1,18 @@
+[B]5.4.2[/B]
+- fixed: change remaining http calls to https
+
+[B]5.4.1[/B]
+- fixed: fr-FR and it-IT issue
+
+[B]5.4.0[/B]
+- added: Landscape scraping from tmdb
+
+[B]5.3.6[/B]
+- fixed: imdb host
+
+[B]5.3.5[/B]
+- improved: search results to handle articles at the end of title
+
 [B]5.3.4[/B]
 - fixed: search results
 
